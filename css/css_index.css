@@ -1,0 +1,39 @@
+h1{
+    color: darkgreen;
+    font-family: Bahnschrift, serif
+}
+
+h2 {
+    color: dimgray;
+}
+
+p{
+    font-family: "Arial", serif;
+    color: dimgray;
+}
+
+a {
+    background: lightgray;
+    color: darkgreen
+}
+a.erster_link_bp{
+    color: limegreen;
+}
+a.zweiter_link_SCL {
+    color: darkgoldenrod;
+}
+a.dritter_link_TA{
+    color: darkcyan;
+}
+
+h1.erste_ueberschrift {
+    color: limegreen;
+}
+
+h1.zweite_ueberschrift {
+  color: darkgoldenrod;
+}
+
+h1.dritte_ueberschrift {
+    color: darkcyan;
+}
