@@ -8,11 +8,11 @@ let summe = 0;
 let anzahl_bewertungen = 0;
 
 function bewertungen_auslesen() {
-    note_1 = parseInt(document.getElementById("bewertung_bild_1").value);
-    note_2 = parseInt(document.getElementById("bewertung_bild_2").value);
-    note_3 = parseInt(document.getElementById("bewertung_bild_3").value);
-    note_4 = parseInt(document.getElementById("bewertung_bild_4").value);
-    note_5 = parseInt(document.getElementById("bewertung_bild_5").value);
+    bewertung_1 = parseInt(document.getElementById("bewertung_bild_1").value);
+    bewertung_2 = parseInt(document.getElementById("bewertung_bild_2").value);
+    bewertung_3 = parseInt(document.getElementById("bewertung_bild_3").value);
+    bewertung_4 = parseInt(document.getElementById("bewertung_bild_4").value);
+    bewertung_5 = parseInt(document.getElementById("bewertung_bild_5").value);
 
     console.log(bewertung_1 + ";" + bewertung_2 + ";" + bewertung_3 + ";" + bewertung_4 + ";" + bewertung_5 + ";")
 
@@ -35,7 +35,7 @@ function punkte_pruefen(punkte) {
         summe= summe + punkte;
         anzahl_bewertungen = anzahl_bewertungen + 1;
     }
-    if(punkte >15 || punkte<0){
+    if(punkte >10 || punkte <0){
         console.log(punkte + "Bitte Punkte von 0-10 eintragen!")
     }
     else {
@@ -43,3 +43,4 @@ function punkte_pruefen(punkte) {
         anzahl_bewertungen = anzahl_bewertungen + 1;
     }
 }
+
