@@ -1,3 +1,8 @@
+div{
+    width: 97%;
+    margin: auto;
+}
+
 h1{
     color: darkgreen;
     font-family: Bahnschrift, serif
@@ -31,7 +36,7 @@ h1.erste_ueberschrift {
 }
 
 h1.zweite_ueberschrift {
-  color: darkgoldenrod;
+    color: darkgoldenrod;
 }
 
 h1.dritte_ueberschrift {
