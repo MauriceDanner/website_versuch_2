@@ -1,4 +1,4 @@
-let bewertung_1;
+let bewertung_1;                                                                                                        //Definition Variablen
 let bewertung_2;
 let bewertung_3;
 let bewertung_4;
@@ -12,30 +12,42 @@ function bewertungen_auslesen() {
     summe = 0
     anzahl_bewertungen = 0
 
-    bewertung_1 = parseInt(document.getElementById("bewertung_bild_1").value);
+    bewertung_1 = parseInt(document.getElementById("bewertung_bild_1").value);                                  //Auslesen des Textfeldes (ID) und Umwandlung in Zahl
     bewertung_2 = parseInt(document.getElementById("bewertung_bild_2").value);
     bewertung_3 = parseInt(document.getElementById("bewertung_bild_3").value);
     bewertung_4 = parseInt(document.getElementById("bewertung_bild_4").value);
     bewertung_5 = parseInt(document.getElementById("bewertung_bild_5").value);
 
-    console.log(bewertung_1 + ";" + bewertung_2 + ";" + bewertung_3 + ";" + bewertung_4 + ";" + bewertung_5 + ";")
+    console.log(bewertung_1 + ";" + bewertung_2 + ";" + bewertung_3 + ";" + bewertung_4 + ";" + bewertung_5 + ";")      //Ausgabe der Punktwerte in der Konsole
 
-    punkte_pruefen(bewertung_1)
+    punkte_pruefen(bewertung_1)                                                                                         //Überprüfung ob wirklich Nummer eingegeben wurde
     punkte_pruefen(bewertung_2)
     punkte_pruefen(bewertung_3)
     punkte_pruefen(bewertung_4)
     punkte_pruefen(bewertung_5)
 
-    ergebnis_bewertung = summe / anzahl_bewertungen
+    ergebnis_bewertung = summe / anzahl_bewertungen                                                                     //Berechnungsformel
 
-    document.getElementById("ausgabe").innerHTML = ergebnis_bewertung
+    document.getElementById("ausgabe").innerHTML = ergebnis_bewertung                                           //Ausgabe der Berechnung im HTML Dokument
 
     if(ergebnis_bewertung > 10) {
         document.getElementById("ausgabe").innerHTML = "Bitte Punkte von 0 bis 10 eintragen!"
     }
+    if(ergebnis_bewertung <=4)                                                                                          //Einfärben des Berechnungswertes in ausgewählten Bereichen
+    {
+        document.getElementById("ausgabe").style.color = "crimson"
+    }
+    if(ergebnis_bewertung >4 && ergebnis_bewertung<7)
+    {
+        document.getElementById("ausgabe").style.color = "darkgoldenrod"
+    }
+    if(ergebnis_bewertung >=7)
+    {
+        document.getElementById("ausgabe").style.color = "Green"
+    }
 
 }
-function punkte_pruefen(punkte) {
+function punkte_pruefen(punkte) {                                                                                       //Überprüfung und mögliche Fehlerausgabe in der Konsole
     if(isNaN(punkte)) {
         console.log(punkte + "Bitte Zahlen eingeben!")
     }
