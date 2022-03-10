@@ -2,7 +2,7 @@
 <body lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Galerie</title>
+    <title>Bildergalerie</title>
     <link rel="stylesheet" href="../css/css_index.css">
     <script src="../js/main_js.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -11,9 +11,10 @@
 </head>
 </body>
 <div>
-<a href="index.html"> Zurück zur Startseite </a>
+<a class="zurück_zur_startseite" href="index.html"> Zurück zur Startseite </a>
 <h1 class="erste_ueberschrift">AUTOKONZERT BALIPOCKETS </h1>
-<p> Am 24. August 2020 fand in Leinefelde ein Autobenefizkonzert des Vereins Balipockets statt. In Absprache mit dem CEO des Vereins, welcher mit seinem Verein schulische Projekte in Bali fördert, durfte ich an dem besagten Tag mit 2 Filmmakern gemeinsam das Mediateam bilden.
+<p> Am 24. August 2020 fand in Leinefelde ein Autobenefizkonzert des Vereins Balipockets statt.
+    In Absprache mit dem CEO des Vereins, welcher mit seinem Verein schulische Projekte in Bali fördert, durfte ich an dem besagten Tag mit 2 Filmmakern gemeinsam das Mediateam bilden.
     Mit einem Erlös von 2.500€ konnte das Open Air Konzert vom Veranstalter als voller Erfolg angesehen werden.
 </p>
 <img src="../img/BP%201.jpg" height="183" width="275" alt="Fotografie Veit Walter Band Autokonzert"/>
@@ -82,36 +83,8 @@
 <br>
 
 <button class="mdl-button mdl-js-button mdl-button--raised" onclick="bewertungen_auslesen()">
-    Bewertungsdurchschnitt
+    Bewertungsdurchschnitt berechnen!
 </button>
 <p>Der Bewertungsdurchschnitt ist: </p>
 <p id="ausgabe"  ></p>
-</div>
-
-<div id="contact-form" class="clearfix">
-    <ul id="errors">
-
-    </ul>
-    <form method="post" action="process.php">
-        <label for="name">Name: <span class="required">*</span></label>
-        <input type="text" id="name" name="name" value="" placeholder="Max Mustermann" required="required" autofocus="autofocus" />
-        <br>
-        <br>
-
-        <label for="email">Email: <span class="required">*</span></label>
-        <input type="email" id="email" name="email" value="" placeholder="max.mustermann@gmail.com" required="required" />
-        <br>
-        <br>
-        <label for="telephone">Telefon: </label>
-        <input type="tel" id="telephone" name="telephone" value="" />
-        <br>
-        <br>
-        </select>
-        <label for="message">Kommentar: <span class="required">*</span></label>
-        <textarea id="message" name="Kommentar" placeholder="Ihre Nachricht muss mindestens 20 Zeichen enthalten.." required="required"   data-minlength="20"></textarea>
-
-        <span id="loading"></span>
-        <input type="submit" value="Holla!" id="submit-button" />
-        <p id="req-field-desc"><span class="required">*</span> Diese Felder müssen ausgefüllt werden</p>
-    </form>
 </div>
