@@ -28,12 +28,29 @@ function bewertungen_auslesen() {
 
     ergebnis_bewertung = summe / anzahl_bewertungen                                                                     //Berechnungsformel
 
-    document.getElementById("ausgabe").innerHTML = ergebnis_bewertung                                           //Ausgabe der Berechnung im HTML Dokument
+    document.getElementById("ausgabe").innerHTML = ergebnis_bewertung                                          //Ausgabe der Berechnung im HTML Dokument
 
-    if(ergebnis_bewertung > 10) {
-        document.getElementById("ausgabe").innerHTML = "Bitte Punkte von 0 bis 10 eintragen!"
+    if (bewertung_1 <0 || bewertung_1 >15){                                                                             // Überprüfung der eingetragenen Werte
+        document.getElementById("ausgabe").innerHTML = "Bitte in jedem Feld eine Bewertung zwischen 0 und 10 eingeben!";
+        console.log("Bitte geben sie einen Wert zwischen 0 und 10 ein")
     }
-    if(ergebnis_bewertung <=4)                                                                                          //Einfärben des Berechnungswertes in ausgewählten Bereichen
+    if (bewertung_2 <0 || bewertung_2 >15) {
+        document.getElementById("ausgabe").innerHTML = "Bitte in jedem Feld eine Bewertung zwischen 0 und 10 eingeben!";
+        console.log("Bitte geben sie einen Wert zwischen 0 und 10 ein")
+    }
+    if (bewertung_3 <0 || bewertung_3 >15) {
+        document.getElementById("ausgabe").innerHTML = "Bitte in jedem Feld eine Bewertung zwischen 0 und 10 eingeben!";
+        console.log("Bitte geben sie einen Wert zwischen 0 und 10 ein")
+    }
+    if (bewertung_4 <0 || bewertung_4 >15) {
+        document.getElementById("ausgabe").innerHTML = "Bitte in jedem Feld eine Bewertung zwischen 0 und 10 eingeben!";
+        console.log("Bitte geben sie einen Wert zwischen 0 und 10 ein")
+    }
+    if (bewertung_5 <0 || bewertung_5 >15) {
+        document.getElementById("ausgabe").innerHTML = "Bitte in jedem Feld eine Bewertung zwischen 0 und 10 eingeben!";
+        console.log("Bitte geben sie einen Wert zwischen 0 und 10 ein")
+    }
+    if(ergebnis_bewertung <=4 || ergebnis_bewertung <10)                                                                //Einfärben des Berechnungswertes in ausgewählten Bereichen
     {
         document.getElementById("ausgabe").style.color = "crimson"
     }
